@@ -15,4 +15,4 @@
 	templateDir = /Users/junye/.git-template
 	defaultBranch = main
 [core]
-	excludesFile = ~/.gitignore
+	excludesFile = ~/.gitignore_global
