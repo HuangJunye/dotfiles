@@ -1,0 +1,18 @@
+[user]
+	name = Junye Huang
+	email = h.jun.ye@gmail.com
+[alias]
+	ac = !git add -A && git commit -m
+    apply-gitignore = !git ls-files -ci --exclude-standard -z | xargs -0 git rm --cached
+[includeIf "gitdir:~/Documents/Github/IBM/"]
+    path = ~/Documents/Github/IBM/.gitconfig
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[init]
+	templateDir = /Users/junye/.git-template
+	defaultBranch = main
+[core]
+	excludesFile = ~/.gitignore
